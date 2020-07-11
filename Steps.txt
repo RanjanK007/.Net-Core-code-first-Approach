@@ -1,0 +1,36 @@
+nuget packages
+
+install-package Microsoft.EntityFrameworkCore.Design
+install-package Microsoft.EntityFrameworkCore.SqlServer
+install-package Microsoft.EntityFrameworkCore.Tools
+
+Create OrderModel
+
+Create OrderDbContext
+
+appsetting connectionstring
+
+add startup configration 
+
+-------------------------------------------------
+add-migration orderdbmigration
+
+update-database
+
+-------------------------------------------------
+
+Create OrderDataAccess and IOrderDataAccess class
+
+Create OrderController
+
+check using postman
+
+------------------------------
+https://localhost:44318/api/Order/CreateOrder
+CreateOrder sample:
+{
+    "OrderId": "655D37D4-AFC6-4494-9B9B-7AF226DAC5AD",
+    "ProductName": "test product",
+    "CardNumber": "1234",
+    "UserId" : "2"
+}
